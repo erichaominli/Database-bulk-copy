@@ -83,7 +83,7 @@ namespace Database_linq
             DataTable dt = ToDataTable(ep);
 
 
-            string connectionString = @"data source=tesql3;initial catalog=eric test;user id=web.user;password=webuser02182000";
+            string connectionString =/*SQL server connection */;
             try
             {
                 SqlConnection SqlConnectionObj = new SqlConnection(connectionString);
@@ -108,7 +108,7 @@ namespace Database_linq
 
         private void clear_Click(object sender, RoutedEventArgs e)
         {
-            string connectionString = @"data source=tesql3;initial catalog=eric test;user id=web.user;password=webuser02182000";
+            string connectionString = /*SQL server connection */;
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             SqlCommand clear = new SqlCommand("Delete From [dbo].[ddaTest]", connection);
