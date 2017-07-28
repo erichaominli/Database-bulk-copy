@@ -1,0 +1,20 @@
+﻿<Window x:Class="Database_linq.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Database_linq"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="dg" HorizontalAlignment="Left" Height="261" Margin="0,58,0,0" VerticalAlignment="Top" Width="429"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0,21,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="429" RenderTransformOrigin="0.324,0.503" Name="addbox"/>
+        <Button Content=". . ." HorizontalAlignment="Left" Margin="434,21,0,0" VerticalAlignment="Top" Width="32" Name="load" Click="load_Click"/>
+        <Button Content="import" HorizontalAlignment="Left" Margin="434,58,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.258,0.368" Name="import" Click="import_Click"/>
+        <Button Name="clear" Content="Clear" HorizontalAlignment="Left" Margin="434,95,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.18,0.543" Click="clear_Click"/>
+
+    </Grid>
+</Window>
